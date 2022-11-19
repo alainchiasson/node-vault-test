@@ -1,6 +1,6 @@
 # Vault Node Approle quick test.
 
-The goal is to have a quick vault environment for building and testing vault integration and code breakout.
+The goal is to have a quick vault environment for building and testing vault integration and code breakout. This work is based on : https://codersociety.com/blog/articles/hashicorp-vault-node
 
 # Startup 
 

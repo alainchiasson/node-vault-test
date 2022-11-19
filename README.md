@@ -26,3 +26,13 @@ The client is a simple login-read-print written in nodejs. To run it simply:
 
 This will authenticate with vault (as root), generate the roleId and secretId, assign them to environment variables and launch the node script app.js. The app.js will use the roleid and secretid to authemnticate with Vault, fetch the secret and print it out.
 
+# Doing things by hand
+
+The images are built using fedora as a base - so you should be able to use DNF to install a wide variety of packages. To "connct" intop an image : 
+
+    docker compose exec shell /bin/bash
+    docker compose exec client /bin/bash
+    docker compose exec vault /bin/sh
+
+It should drop you into /workdir except for the vault image - this is using the alpine mage from Hashicorp.
+

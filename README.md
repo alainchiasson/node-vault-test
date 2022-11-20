@@ -24,7 +24,7 @@ The client is a simple login-read-print written in nodejs. To run it simply:
 
     docker compose exec client /bin/bash -c get_role_creds.sh 
 
-This will authenticate with vault (as root), generate the roleId and secretId, assign them to environment variables and launch the node script app.js. The app.js will use the roleid and secretid to authemnticate with Vault, fetch the secret and print it out.
+This will authenticate with vault (as root), generate the roleId and secretId, assign them to environment variables and launch the node script app.js. The app.js will use the roleid and secretid to authemnticate with Vault, fetch the secret and print it out. 
 
 # Doing things by hand
 
